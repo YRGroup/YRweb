@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>在线报名</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+	<script src="./js/jquery-1.10.1.min.js"></script>
+	<script>
+	$(function(){
+		$("#btn_submit").click(function(){
+			let v_name=$("#name").val();
+			let v_phone=$("#phone").val();
+			if(!v_name||!v_phone){
+				alert("姓名和手机号必须填写!");
+				return;
+			}
+			$.ajax({
+				type: 'post',
+				url: '/addschoolsignup.php',
+				data: $("#signupform").serialize(),
+				success: function(data) {
+					if(data==1)
+					{
+						alert('报名成功');
+					}
+					else
+						alert(data);
+				}
+			});
+		});
+	})
+	</script
+</head>
+
+<body>
+        <div class="section">
+                <h3 class="title1" data-aos="fade-up">ONLINE REGISTRATION</h3>
+                <h4 class="title2" data-aos="fade-up">在线报名</h4>
+                <div class="container ">
+                    <form class="enrol" action="/addschoolsignup.php" method="POST" id="signupform" name="signupform">
+                        <div class="row">
+                            <label>
+                                <input class="txt w1" id="name" name="name" type="text" placeholder="您的姓名">
+                            </label>
+                            <label>
+                                <input class="txt w1" id="phone" name="phone" type="text" placeholder="手机号">
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label>
+                                <input class="txt w1" id="student_name" name="student_name" type="text" placeholder="孩子姓名">
+                            </label>
+                            <label>
+                                <input class="txt w1" id="student_age" name="student_age" type="text" placeholder="孩子年龄">
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="select">
+                                <span><i class="iconFont">&#xe621;</i></span>
+                                <select class="txt" name="school" id="school" placeholder="学校">
+                                    <option>郑州航空港育人国际学校</option>
+                                    <option>郑州经开区育人学校</option>
+                                    <option>郑州外国语女子中学</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="row btnrow">
+                            <button class="btn" type="button" name="btn_submit" id="btn_submit" >提交</button>
+                        </div>
+    
+                    </form>
+                </div>
+            </div>
+</body>
