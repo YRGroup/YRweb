@@ -28,16 +28,30 @@
             <ul class="head-lis head-lis-two">
                 <li><a href="/">首页</a></li>
                 <li class="down">
-                    <a href="##">全景校园<i class="iconFont">&#xe621;</i></a>
-                    <!-- <div class="line"></div> -->
-                    <ul class="downpanel">
-                        <li><a href="https://www.gy720.com/pano/view/9986" target="_blank">郑州航空港育人国际学校</a></li>
-                        <li><a href="https://www.gy720.com/pano/view/9989" target="_blank">郑州外国语女子中学</a></li>
-                        <li><a href="https://www.gy720.com/pano/view/9991" target="_blank">郑州航空港区育人高级中学</a></li>
-                        <li><a href="https://www.gy720.com/pano/view/10019" target="_blank">襄城育人国际学校</a></li>
-                    </ul>
-                </li>
-                <li class="down">
+						<a href="##">全景校园<i class="iconFont">&#xe621;</i></a>
+						<!-- <div class="line"></div> -->
+						<ul class="downpanel" style="width:200px">
+							<li><a href="https://www.gy720.com/pano/view/9986" target="_blank">郑州航空港育人国际学校</a></li>
+							<li><a href="https://www.gy720.com/pano/view/9989" target="_blank">郑州外国语女子中学</a></li>
+							<li><a href="https://www.gy720.com/pano/view/9991" target="_blank">郑州航空港区育人高级中学</a></li>
+							<li><a href="https://www.gy720.com/pano/view/10019" target="_blank">襄城育人国际学校</a></li>
+						</ul>
+					</li>
+					<ul class="mDropdown">
+						<li class="mdrop">
+							<a href="https://www.gy720.com/pano/view/9986" target="_blank">郑州航空港育人国际学校</a>
+						</li>
+						<li class="mdrop">
+							<a href="https://www.gy720.com/pano/view/9989" target="_blank">郑州外国语女子中学</a>
+						</li>
+						<li class="mdrop">
+							<a href="https://www.gy720.com/pano/view/9991" target="_blank">郑州航空港区育人高级中学</a>
+						</li>
+						<li class="mdrop">
+							<a href="https://www.gy720.com/pano/view/10019" target="_blank">襄城育人国际学校</a>
+						</li>
+					</ul>
+					<li class="down">
 						<a href="##">为所育为<i class="iconFont">&#xe621;</i></a>
 						<!-- <div class="line"></div> -->
 						<ul class="downpanel">
@@ -46,7 +60,18 @@
 							<li><a href="./?cat=11" target="_blank">谈话录</a></li>
 							<!-- <li><a href="./?cat=12" target="_blank">朗读者</a></li> -->
 						</ul>
-                    </li>
+					</li>
+					<ul class="mDropdown">
+						<li class="mdrop">
+							<a href="./?cat=9">iDOL</a>
+						</li>
+						<li class="mdrop">
+							<a href="./?cat=10">育人往事</a>
+						</li>
+						<li class="mdrop">
+							<a href="./?cat=11">朗读者</a>
+						</li>
+					</ul>
                 <li><a href="http://jkyr.yearnedu.com" target="_blank">智慧校园</a></li>
                     
             </ul>
