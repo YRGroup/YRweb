@@ -461,9 +461,27 @@
 		<iframe style="width:100%;height:550px;" src="<?php echo esc_url( get_template_directory_uri() ); ?>/signUp.html" frameborder="0"></iframe>
 	</div>
 <div class="section footer" id="content">
-		<h3 class="title1" >CONTACT US</h3>
-		<h4 class="title2" style="color: #ffffff">联系我们</h4>
 		<div class="footer-con">
+
+		<!-- <li><a href="./?cat=9" target="_blank">iDOL</a></li>
+							<li><a href="./?cat=10" target="_blank">育人往事</a></li>
+							<li><a href="./?cat=11" target="_blank">谈话录</a></li> -->
+              <li><a href="https://www.gy720.com/pano/view/9986" target="_blank">郑州航空港育人国际学校</a></li>
+							<li><a href="https://www.gy720.com/pano/view/9989" target="_blank">郑州外国语女子中学</a></li>
+							<li><a href="https://www.gy720.com/pano/view/9991" target="_blank">郑州航空港区育人高级中学</a></li>
+							<li><a href="https://www.gy720.com/pano/view/10019" target="_blank">襄城育人国际学校</a></li>
+              	
+
+      <ul class="footer-contact">
+        <li><a href="./?cat=9" target="_blank">iDOL</a></li>
+				<li><a href="./?cat=10" target="_blank">育人往事</a></li>
+				<li><a href="./?cat=11" target="_blank">谈话录</a></li>
+        <li><a href="http://jkyr.yearnedu.com" target="_blank">智慧校园</a></li>
+        <li><a href="https://www.gy720.com/pano/view/9986" target="_blank">郑州航空港育人国际学校</a></li>
+        <li><a href="https://www.gy720.com/pano/view/9989" target="_blank">郑州外国语女子中学</a></li>
+        <li><a href="https://www.gy720.com/pano/view/9991" target="_blank">郑州航空港区育人高级中学</a></li>
+        <li><a href="https://www.gy720.com/pano/view/10019" target="_blank">襄城育人国际学校</a></li>
+      </ul>
 			<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/wximg.jpg">
 			<ul class="footer-contact">
 				<li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/add.png" alt="">郑东新区祥盛街8号福晟国际2号楼14F</li>
