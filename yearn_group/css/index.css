@@ -1224,7 +1224,7 @@ ul li .mask{
         margin: 30px auto;
     }
     .enrol{
-        width: 100%;
+        /* width: 100%; */
         margin-bottom: 20px
     }
     .enrol label{
@@ -1245,5 +1245,7 @@ ul li .mask{
     /* .data-con .data-lis{
         width: 50%;
     } */
-
+    .enrol{
+      width: 340px;
+  }
 }  
