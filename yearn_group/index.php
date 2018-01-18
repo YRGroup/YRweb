@@ -498,12 +498,22 @@
 	var demo2 = new CountUp("myTargetElement2", 0, 10000, 0, 2.5, options);
 	var demo3 = new CountUp("myTargetElement3", 0, 1200, 0, 2.5, options);
 	var demo4 = new CountUp("myTargetElement4", 0, 8300, 0, 2.5, options);
+	let clientW = $(window).width()  
 	$(window).scroll(function () {
-		if ($(window).scrollTop() >= 1000) {
-			demo.start();
-			demo2.start();
-			demo3.start();
-			demo4.start();
+		if(clientW < 840){
+			if ($(window).scrollTop() >= 600) {
+				demo.start();
+				demo2.start();
+				demo3.start();
+				demo4.start();
+			}
+		}else{
+			if ($(window).scrollTop() >= 1000) {
+				demo.start();
+				demo2.start();
+				demo3.start();
+				demo4.start();
+			}
 		}
 	});
 </script>
