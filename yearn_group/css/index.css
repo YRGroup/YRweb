@@ -1035,13 +1035,13 @@ ul li .mask{
     overflow: hidden;
 }
 .enrol label{
-    margin: 20px 15px 0 15px;
-    display: inline-block;
-    position: relative;
+  float: left;
+  margin: 20px 15px 0 15px;
+  display: inline-block;
+  position: relative;
 }
 .enrol label.select{
     width: 650px;
-    padding-right:30px;
 }
 @media (max-width: 840px) {
   .enrol label.select{

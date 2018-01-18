@@ -1040,7 +1040,7 @@ ul li .mask{
 }
 .enrol label.select{
     width: 100%;
-    padding-right:30px;
+    /* padding-right:30px; */
 }
 .enrol label.select .txt {
     width: 100%;
