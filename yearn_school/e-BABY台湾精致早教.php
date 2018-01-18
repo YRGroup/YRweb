@@ -21,9 +21,9 @@
         <div class="head">
             <div class="head-con">
                 <span id="nav-toggle" class="nav-toggle"><span></span><span></span><span></span></span>
-                <a class="head-logo" href="/"></a>
+                <a class="head-logo" href="http://www.yearnedu.com"></a>
                 <ul class="head-lis">
-                    <li class="head-lis-active"><a href="http://school/?school=baby">首页</a>
+                    <li class="head-lis-active"><a href="http://www.yearnedu.com">首页</a>
                         <div class="line"></div>
                     </li>
                     <!-- <li><a href="https://www.gy720.com/pano/view/10019" target="_blank">全景校园</a>
