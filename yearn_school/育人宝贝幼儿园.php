@@ -237,7 +237,7 @@
         window.map = map;
     }
     var markerArr = [{
-        title: "爱因斯坦国际幼儿园",
+        title: "育人宝贝幼儿园",
         content: "电 话：0371-55261585<br>地 址：郑州市经开区经南二路12号",
         point: "113.761876|34.724177",
         isOpen: 1,

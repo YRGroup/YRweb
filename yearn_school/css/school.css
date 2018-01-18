@@ -465,6 +465,7 @@
     .s-choice-con{
         width:auto;
         margin-top: 0;
+        display: inherit;
     }
     .s-choice-con li{
         width: 100%;
