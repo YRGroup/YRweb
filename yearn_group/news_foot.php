@@ -20,6 +20,14 @@
             $('.head-con').addClass('head-con-two');
         }
     });
+    $(function(){
+		let clientW = $(window).width()  
+		if(clientW < 840){
+			$(".down").click(function() {
+				$(this).next().toggle("1000");
+			})
+		}
+	})
 </script>
 
 </html>

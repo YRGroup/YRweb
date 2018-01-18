@@ -153,12 +153,13 @@
         width: auto;
         padding: 20px 12px;
     }
-    .news-img{
-        width: 35%;
-        height: 100px;
+    .imgbox{
+        width: 120px;
+        height: 80px;
     }
     .news-item{
-        width: 62%;
+        width: 60%;
+        position: relative;
     }
     .news-item>p,.news-more{
         display: none;
@@ -175,10 +176,11 @@
     .news-item>div{
         display: block;
         position: absolute;
-        bottom: 20px;
-        right: 20px;
-        font-size: 14px;
+        bottom: -20px;
+        left: 6px;
+        font-size: 12px;
         color: #999999;
+
     }
 
 
