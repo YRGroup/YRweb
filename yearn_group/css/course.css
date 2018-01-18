@@ -23,7 +23,7 @@
     position: absolute;
     z-index: 10;
     color: #fff;
-    top: 20%;
+    top: 10%;
     left:8em;
     width: 40em;
     line-height: 2em;
@@ -32,6 +32,14 @@
     padding: 2em;
     border-radius: 5px;
     font-size: 16px;
+}
+@media(max-width:840px){
+  .c-con{
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+  }
 }
 .c-title{
     height: 70px;
@@ -48,6 +56,9 @@
     top: -1.2em;
     left: 1.2em;
 }
+.grade{
+  text-align: center;
+}
 .grade::before{
     content: '';
     display: block;
@@ -58,7 +69,6 @@
 }
 .grade>img{
     width: 2em;
-    margin-left: 70%;
 }
 .grade>span{
     position: relative;

@@ -1035,14 +1035,18 @@ ul li .mask{
     overflow: hidden;
 }
 .enrol label{
-    float: left;
     margin: 20px 15px 0 15px;
-    display: block;
+    display: inline-block;
     position: relative;
 }
 .enrol label.select{
-    width: 100%;
+    width: 650px;
     padding-right:30px;
+}
+@media (max-width: 840px) {
+  .enrol label.select{
+    width: 310px;
+  }
 }
 .enrol label.select .txt {
     width: 100%;
@@ -1195,15 +1199,16 @@ ul li .mask{
     .summary-m{
         position: relative;
         top: 4em;
-        padding: 1em;
-        height:1.8em;
-        line-height: 1.5;
+        padding: 0 1em;
+        height:3em;
+        line-height: 1.5em;
         font-size: 1.5em;
         color: #ffffff;
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
         overflow: hidden;
+        word-break: break-all;
     }
     .mask-m{
         position: absolute;
@@ -1223,6 +1228,7 @@ ul li .mask{
         margin-bottom: 20px
     }
     .enrol label{
+      width: 310px;
     }
     
 }

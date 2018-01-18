@@ -458,7 +458,7 @@
 				<div class="teacher-next"><i class="iconFont">&#xe601;</i></div>
 			</div>
 		</div>
-		<iframe style="width:100%;height:440px;" src="<?php echo esc_url( get_template_directory_uri() ); ?>/signUp.html" frameborder="0"></iframe>
+		<iframe style="width:100%;height:550px;" src="<?php echo esc_url( get_template_directory_uri() ); ?>/signUp.html" frameborder="0"></iframe>
 	</div>
 <div class="section footer" id="content">
 		<h3 class="title1" >CONTACT US</h3>
