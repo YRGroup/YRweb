@@ -776,20 +776,25 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 60px auto 0;
 }
 .footer-con>img{
-    width: 160px;
-    height: 160px;
+    width: 120px;
+    height: 120px;
     /*padding: 0 100px;*/
 }
 .footer-contact{
     font-size: 14px;
     color: #d9d9d9;
     text-align: left;
-    padding: 0 80px;
-    margin-top: 40px;
+    padding: 0 30px;
+}
+.footer-contact a{
+  color: inherit;
+}
+.footer-contact a:hover{
+  color: initial;
 }
 .footer-contact>li{
     margin-bottom: 20px;
@@ -807,6 +812,41 @@
     padding: 16px 0;
     font-size: 12px;
     color: #A5A5A5;
+}
+
+/* 新增 */
+.footer{
+  padding: 30px 0;
+}
+.footer-con{
+  max-width: 1200px;
+}
+.footer-contact{
+  padding: 0 30px;
+  margin-top: 0;
+}
+.footer-contact h3{
+  font-size: 16px;
+  color: #ccc;
+}
+.footer-contact:nth-of-type(2){
+  margin-left: 20%;
+}
+.footer-contact:nth-of-type(2) li,.footer-contact:nth-of-type(3) li{
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.footer-contact a{
+  color: inherit;
+}
+.footer-contact a:hover{
+  color: #17ebbdd0;
+}
+@media (max-width:860px){
+  .footer-contact:nth-of-type(2) li,.footer-contact:nth-of-type(3) li{
+    display: none
+  }
 }
 
 /*特色课程部分*/
