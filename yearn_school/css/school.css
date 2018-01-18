@@ -204,8 +204,9 @@
 }
 .s-choice-lis{
     width: 340px;
-    height: 334px;
+    /* height: 334px; */
     padding: 20px;
+    margin: 0 auto;
     padding-bottom: 0;
     cursor: pointer;
     border-radius: 4px;
@@ -350,7 +351,6 @@
     background: #ffffff;
 }
 
-
 /*招生问答部分*/
 .s-answer-con{
     max-width: 1200px;
@@ -363,6 +363,8 @@
     margin-right: 2%;
     box-sizing: border-box;
 }
+
+
 .s-answer-ul:nth-child(2){
     margin-right: 0;
 }
@@ -485,8 +487,12 @@
         height: auto;
     }
     .s-answer-ul{
+        float: none;
         width: 94%;
         margin: 0 auto;
+    }
+    .s-answer-ul:nth-child(2) {
+      margin-right: auto;
     }
     .s-panel-head{
         font-size: 15px;
