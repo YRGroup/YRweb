@@ -497,6 +497,9 @@
     .s-panel-head{
         font-size: 15px;
     }
+    .s-choice-con .w400{
+        width: 100%;
+    }
     /* .head-two{
         height: 60px;
         margin: 0 auto;
