@@ -1247,5 +1247,8 @@ ul li .mask{
     } */
     .enrol{
       width: 340px;
-  }
+    }
+    .enrol label.select{
+      padding-right: 0;
+    }
 }  
