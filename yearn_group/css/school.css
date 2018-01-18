@@ -199,8 +199,9 @@
 }
 .s-choice-lis{
     width: 340px;
-    height: 334px;
+    /* height: 334px; */
     padding: 20px;
+    margin: 0 auto;
     padding-bottom: 0;
     cursor: pointer;
     border-radius: 4px;
