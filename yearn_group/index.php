@@ -462,32 +462,27 @@
 	</div>
 <div class="section footer" id="content">
 		<div class="footer-con">
-
-		<!-- <li><a href="./?cat=9" target="_blank">iDOL</a></li>
-							<li><a href="./?cat=10" target="_blank">育人往事</a></li>
-							<li><a href="./?cat=11" target="_blank">谈话录</a></li> -->
-              <li><a href="https://www.gy720.com/pano/view/9986" target="_blank">郑州航空港育人国际学校</a></li>
-							<li><a href="https://www.gy720.com/pano/view/9989" target="_blank">郑州外国语女子中学</a></li>
-							<li><a href="https://www.gy720.com/pano/view/9991" target="_blank">郑州航空港区育人高级中学</a></li>
-							<li><a href="https://www.gy720.com/pano/view/10019" target="_blank">襄城育人国际学校</a></li>
-              	
-
+      <img src="http://www.yearnedu.com/wp-content/themes/yearn_group/img/wximg.jpg">
       <ul class="footer-contact">
-        <li><a href="./?cat=9" target="_blank">iDOL</a></li>
-				<li><a href="./?cat=10" target="_blank">育人往事</a></li>
-				<li><a href="./?cat=11" target="_blank">谈话录</a></li>
-        <li><a href="http://jkyr.yearnedu.com" target="_blank">智慧校园</a></li>
-        <li><a href="https://www.gy720.com/pano/view/9986" target="_blank">郑州航空港育人国际学校</a></li>
-        <li><a href="https://www.gy720.com/pano/view/9989" target="_blank">郑州外国语女子中学</a></li>
-        <li><a href="https://www.gy720.com/pano/view/9991" target="_blank">郑州航空港区育人高级中学</a></li>
-        <li><a href="https://www.gy720.com/pano/view/10019" target="_blank">襄城育人国际学校</a></li>
+        <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/add.png" alt="">郑东新区祥盛街8号福晟国际2号楼14F</li>
+        <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/tel.png" alt="">0371-55261585</li>
+        <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/email.png" alt="">contact@yurenedugroup.com</li>
       </ul>
-			<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/wximg.jpg">
-			<ul class="footer-contact">
-				<li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/add.png" alt="">郑东新区祥盛街8号福晟国际2号楼14F</li>
-				<li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/tel.png" alt="">0371-55261585</li>
-				<li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/email.png" alt="">contact@yurenedugroup.com</li>
-			</ul>
+      <ul class="footer-contact">
+        <li><h3>为所育为</h3></li> 
+        <li><a href="./?cat=9" target="_blank">iDOL</a></li>
+        <li><a href="./?cat=10" target="_blank">育人往事</a></li>
+        <li><a href="./?cat=11" target="_blank">谈话录</a></li>
+      </ul>
+      <ul class="footer-contact">
+          <li><h3>集团学校</h3></li> 
+          <li><a href="http://a.yearnedu.com/" target="_blank">郑州航空港育人国际学校</a></li>
+          <li><a href="http://b.yearnedu.com/" target="_blank">襄城育人国际学校</a></li>
+          <li><a href="http://c.yearnedu.com/" target="_blank">经济技术开发区育人学校</a></li>
+          <li><a href="http://d.yearnedu.com/" target="_blank">郑州外国语女子中学</a></li>
+          <li><a href="http://e.yearnedu.com/" target="_blank">e-BABY 台湾精致早教</a></li>
+          <li><a href="http://f.yearnedu.com/" target="_blank">育人宝贝幼儿园</a></li>
+      </ul>
 		</div>
 	</div>
 
