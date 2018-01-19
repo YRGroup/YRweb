@@ -935,7 +935,7 @@ ul li .mask{
     width: 100%;
     height: 100vh;
     z-index: 11;
-    background: rgba(52, 152, 219, 0.5);
+    background: rgba(52, 152, 219, 0.3);
 }
 
 /*gotop*/
@@ -1251,7 +1251,7 @@ ul li .mask{
         top:0;
         width: 100vw;
         height: 100%;
-        background: rgba(41, 128, 185, 0.5);
+        background: rgba(41, 128, 185, 0.3);
     }
     .active-m .mask-m{
         background: rgba(0,0,0,.6);
