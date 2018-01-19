@@ -93,8 +93,7 @@ $course= $courses[$_REQUEST['course']];
         <!-- <source src="http://yrgroup.oss-cn-beijing.aliyuncs.com/new1/%E8%88%9E%E8%B9%88.webm" type="video/webm"> -->
         <source src="<?php echo $course['video_mp4']?>" type="video/mp4">
     </video>
-    <img class="videoCover" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/bg.png" alt="">
-    <div class="wrap"></div>
+    <div class="wrap"> <img class="videoCover" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/bg.png" alt=""></div>
     <div class="c-con">
         <div class="c-title">
             <img src="<?php echo esc_url( get_template_directory_uri() ); ?><?php echo $course['img']?>">

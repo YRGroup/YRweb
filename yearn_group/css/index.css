@@ -722,6 +722,7 @@
     box-shadow: 0 5px 10px 10px rgba(0,0,0,.1);
 }
 .teacher-con{
+    padding-top: 10px;
     height: 330px;
     text-align: center;
     font-size: 18px;
@@ -765,8 +766,10 @@
     margin: 0 auto;
 }
 .teacher-con>.teacher-img img{
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
 }
+
 .teacher-con>h3{
     font-size: 24px;
     color: #333333;
@@ -1278,6 +1281,7 @@ ul li .mask{
     }
     .enrol label{
       width: 310px;
+      margin: 20px 0 0 5px;
     }
     
 }
@@ -1301,3 +1305,12 @@ ul li .mask{
       padding-right: 0;
     }
 }  
+@media (max-width:400px){
+  .teacher-con>.teacher-img{
+      width: 150px;
+      height: 150px;
+  }
+  .teacher-con>h3 {
+    font-size: 18px;
+  }
+}
