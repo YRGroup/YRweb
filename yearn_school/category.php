@@ -17,12 +17,14 @@
             border-bottom: none;
         }
         @media (max-width:860px){
+          .bp-video{
+            width:100% !important;
+          }
           iframe{
             width:100% !important;
-            height:250px;
+            height:250px !important;
           }
         }
-      
     </style>
 
 </head>

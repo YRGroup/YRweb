@@ -1,4 +1,17 @@
-
+  <style>
+      .head-lis-two>.head-lis-active {
+          border-bottom: none;
+      }
+      @media (max-width:860px){
+        .bp-video{
+          width:100% !important;
+        }
+        iframe{
+          width:100% !important;
+          height:250px !important;
+        }
+      }
+  </style>
 	<?php get_template_part('news_header')?>	
     <div class="news-box">
         <div class="news-head headerImg"></div>
