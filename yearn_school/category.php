@@ -63,7 +63,7 @@
 						<a href="<?php the_permalink(); ?>">
 							<div class="imgbox">
 							<?php if ( has_post_thumbnail() ) : ?>
-								 <?php the_post_thumbnail( 'thumbnail' ); ?>
+								<?php the_post_thumbnail( 'thumbnail' ); ?>
 							<?php else: ?>
 								<img src="<?php echo get_first_image(); ?>" alt="<?php the_title();?>" class="news-imgbox">
 							<?php endif; ?>
@@ -83,8 +83,6 @@
         </ul>
 		<?php echo get_pagination();?>
     </div>
-
-
     <div class="foot">
         Copyright ? 2017 yearnedu.com Inc. All Rights Reserved. 郑州育人教育集团备案/许可证编号： 豫ICP备16026588号
     </div>
