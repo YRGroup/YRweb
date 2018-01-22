@@ -98,7 +98,8 @@
 
 		<div class="banner">
 			<!-- <div class="clear"><i class="iconFont">&#xe621;</i></div> -->
-			<div class="pattern"></div>
+      <div class="pattern"></div>
+      <img class="videoCover"  src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/banner2.jpg" alt="">
 			<video loop autoplay="autoplay">
 				<source src="http://yr-zhxy.oss-cn-beijing.aliyuncs.com/YRVideo/web_index.mp4" type="video/mp4">
 				<!-- <source src="http://yr-zhxy.oss-cn-beijing.aliyuncs.com/YRVideo/web_index.webm" type="video/webm"> -->
@@ -145,7 +146,7 @@
 		<div class="section data">
 			<h3 class="title1" data-aos="fade-up">DATA SCREENING</h3>
 			<h4 class="title2" data-aos="fade-up">数据总览</h4>
-			<dic class="data-con pure-g">
+			<div class="data-con pure-g">
 				<div class="data-lis pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-6" data-aos="fade-up" data-aos-delay="100">
 					<div class="data-img"><i class="iconFont">&#xe69b;</i></div>
 					<!--<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/icon_02.png" alt="">-->
@@ -248,177 +249,40 @@
 
 		<div class="schoolday" id="schoolday">
 			<ul class="schoolday-lis">
-				<li class="active" onclick="skipSd('combat')">
+			<?php foreach($courses as $key=>$course): ?>
+			<?php if($domain!='www.yearnedu.com'): ?>
+				<li class="active" onclick="skipSd('<?php echo $key ?>')">
 					<video loop>
 						<!-- <source src="http://yr-zhxy.oss-cn-beijing.aliyuncs.com/YRVideo/官网视频/散打_batch.webm" type="video/webm"> -->
-						<source src="http://yr-zhxy.oss-cn-beijing.aliyuncs.com/YRVideo/官网视频/散打_batch.mp4" type="video/mp4">
+						<source src="<?php echo $course['video_mp4'] ?>" type="video/mp4">
 					</video>
 					<div class="popup">
 						<div class="icon">
-							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/sanda.png">
-							<p class="title">散打</p>
+							<img src="<?php echo esc_url( get_template_directory_uri() ); ?><?php echo $course['img'] ?>">
+							<p class="title"><?php echo $course['name'] ?></p>
 						</div>
 						<p class="titlebar"></p>
-						<p class="summary">散打是中华武术的精华，是具有独特中华民族风格的体育项目， 多年来在民间流传发展并深受人民喜爱。是具有独特中华民族风格的体育项目，多年来在民间流传发展并深受人民喜爱。 散打的起源与发展，是和中华民族悠久历史同步。
-						</p>
+						<p class="summary"><?php echo $course['desc'] ?></p>
 					</div>
 					<div class="mask"></div>
 				</li>
-
-				<li onclick="skipSd('dance')">
-					<video loop>
-						<!-- <source src="http://yr-zhxy.oss-cn-beijing.aliyuncs.com/YRVideo/官网视频/舞蹈_batch.webm" type="video/webm"> -->
-						<source src="http://yr-zhxy.oss-cn-beijing.aliyuncs.com/YRVideo/官网视频/舞蹈_batch.mp4" type="video/mp4">
-					</video>
-					<div class="popup">
-						<div class="icon">
-							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/wudao.png">
-							<p class="title">舞蹈</p>
-						</div>
-						<p class="titlebar"></p>
-						<p class="summary">舞蹈的健身动作爆发力强，对人体体能潜力开发性强，舞蹈能较好地改善练习者的协调能力。 舞蹈是一种极具表现力的运动，通过舞蹈课程，学生们可以表现自己的同时培养了自信和气质。
-						</p>
-					</div>
-					<div class="mask"></div>
-				</li>
-				<li onclick="skipSd('sushi')">
-					<video loop>
-						<!-- <source src="http://yr-zhxy.oss-cn-beijing.aliyuncs.com/YRVideo/官网视频/西点寿司_batch.webm" type="video/webm"> -->
-						<source src="http://yr-zhxy.oss-cn-beijing.aliyuncs.com/YRVideo/官网视频/西点寿司_batch.mp4" type="video/mp4">
-					</video>
-					<div class="popup">
-						<div class="icon">
-							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/shousi.png">
-							<p class="title">西点寿司</p>
-						</div>
-						<p class="titlebar"></p>
-						<p class="summary">寿司是近几年国内最流行的美食之一，最早流传于日本，以简单为美味，以自然为美味，日本料理之所 以逐渐在世界各地蔚然成风，受到越来越多人的喜爱，原因在此。
-						</p>
-					</div>
-					<div class="mask"></div>
-				</li>
-				<li onclick="skipSd('taekwondo')">
-					<video loop>
-						<!-- <source src="http://yr-zhxy.oss-cn-beijing.aliyuncs.com/YRVideo/官网视频/跆拳道_batch.webm" type="video/webm"> -->
-						<source src="http://yr-zhxy.oss-cn-beijing.aliyuncs.com/YRVideo/官网视频/跆拳道_batch.mp4" type="video/mp4">
-					</video>
-					<div class="popup">
-						<div class="icon">
-							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/tai.png">
-							<p class="title">跆拳道</p>
-						</div>
-						<p class="titlebar"></p>
-						<p class="summary">跆拳道起源于朝鲜半岛，是现代奥运会正式比赛项目之一，是一种主要使用手及脚进行格斗或对抗的运动。 跆拳道特技最需要的不是身体，而是心理，克服心理障碍， 慢慢练习不能急于求成。要不断创新才能使跆拳道的特技越来越精彩，其次与人交流和切磋也是一个取得进步的阶梯。
-						</p>
-					</div>
-					<div class="mask"></div>
-				</li>
-				<li onclick="skipSd('sand')">
-					<video loop>
-						<!-- <source src="http://yr-zhxy.oss-cn-beijing.aliyuncs.com/YRVideo/官网视频/金丝沙画_batch.webm" type="video/webm"> -->
-						<source src="http://yr-zhxy.oss-cn-beijing.aliyuncs.com/YRVideo/官网视频/金丝沙画_batch.mp4" type="video/mp4">
-					</video>
-					<div class="popup">
-						<div class="icon">
-							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/shahua.png">
-							<p class="title">金丝沙画</p>
-						</div>
-						<p class="titlebar"></p>
-						<p class="summary">金丝沙画是一门独特的艺术。它结合现代人的审美观，依托深厚的文化底蕴和文化内涵； 采用产自神奇大自然的天然彩沙，经手工精致而成。
-						</p>
-					</div>
-					<div class="mask"></div>
-				</li>
-				<li onclick="skipSd('drum')">
-					<video loop>
-						<!-- <source src="http://yr-zhxy.oss-cn-beijing.aliyuncs.com/YRVideo/官网视频/非洲鼓_batch.webm" type="video/webm"> -->
-						<source src="http://yr-zhxy.oss-cn-beijing.aliyuncs.com/YRVideo/官网视频/非洲鼓_batch.mp4" type="video/mp4">
-					</video>
-					<div class="popup">
-						<div class="icon">
-							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/gu.png">
-							<p class="title">非洲鼓</p>
-						</div>
-						<p class="titlebar"></p>
-						<p class="summary">非洲鼓用手拍击发声，当拍击的部位不同时，音色也有分别，可以出高、中及低三种声音。 这种鼓可以用作独奏，亦可以和其它传统乐器作合奏。
-						</p>
-					</div>
-					<div class="mask"></div>
-				</li>
+			<?php endif;endforeach;?>
 			</ul>
 			<ul class="schoolday-m">
-				<li class="active-m" onclick="skipSd('combat')">
+			<?php foreach($courses as $key=>$course): ?>
+			<?php if($domain!='www.yearnedu.com'): ?>
+				<li class="active-m" onclick="skipSd('<?php echo $key ?>')">
 					<div class="popup-m">
 						<div class="icon-m">
 							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/sanda.png">
-							<p class="title-m">散打</p>
+							<p class="title-m"><?php echo $course['name'] ?></p>
 						</div>
-						<div class="btn"><a href="/?page_id=338&course=combat">查看更多</a></div>
-						<p class="summary-m">散打是中华武术的精华，是具有独特中华民族风格的体育项目， 多年来在民间流传发展并深受人民喜爱。是具有独特中华民族风格的体育项目，多年来在民间流传发展并深受人民喜爱。 散打的起源与发展，是和中华民族悠久历史同步。
-						</p>
+						<div class="btn"><a>查看更多</a></div>
+						<p class="summary-m"><?php echo $course['desc'] ?></p>
 					</div>
 					<div class="mask-m unactive"></div>
 				</li>
-				<li onclick="skipSd('dance')">
-					<div class="popup-m">
-						<div class="icon-m">
-							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/wudao.png">
-							<p class="title-m">舞蹈</p>
-						</div>
-						<div class="btn"><a href="/?page_id=338&course=dance">查看更多</a></div>
-						<p class="summary-m">舞蹈的健身动作爆发力强，对人体体能潜力开发性强，舞蹈能较好地改善练习者的协调能力。 舞蹈是一种极具表现力的运动，通过舞蹈课程，学生们可以表现自己的同时培养了自信和气质。
-						</p>
-					</div>
-					<div class="mask-m unactive"></div>
-				</li>
-				<li onclick="skipSd('sushi')">
-					<div class="popup-m">
-						<div class="icon-m">
-							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/shousi.png">
-							<p class="title-m">西点寿司</p>
-						</div>
-						<div class="btn"><a href="/?page_id=338&course=sushi">查看更多</a></div>
-						<p class="summary-m">寿司是近几年国内最流行的美食之一，最早流传于日本，以简单为美味，以自然为美味，日本料理之所 以逐渐在世界各地蔚然成风，受到越来越多人的喜爱，原因在此。
-						</p>
-					</div>
-					<div class="mask-m unactive"></div>
-				</li>
-				<li onclick="skipSd('taekwondo')">
-					<div class="popup-m">
-						<div class="icon-m">
-							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/tai.png">
-							<p class="title-m">跆拳道</p>
-						</div>
-						<div class="btn"><a href="/?page_id=338&course=taekwondo">查看更多</a></div>
-						<p class="summary-m">跆拳道起源于朝鲜半岛，是现代奥运会正式比赛项目之一，是一种主要使用手及脚进行格斗或对抗的运动。 跆拳道特技最需要的不是身体，而是心理，克服心理障碍， 慢慢练习不能急于求成。要不断创新才能使跆拳道的特技越来越精彩，其次与人交流和切磋也是一个取得进步的阶梯。
-						</p>
-					</div>
-					<div class="mask-m unactive"></div>
-				</li>
-				<li onclick="skipSd('sand')">
-					<div class="popup-m">
-						<div class="icon-m">
-							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/shahua.png">
-							<p class="title-m">金丝沙画</p>
-						</div>
-						<div class="btn"><a href="/?page_id=338&course=sand">查看更多</a></div>
-						<p class="summary-m">金丝沙画是一门独特的艺术。它结合现代人的审美观，依托深厚的文化底蕴和文化内涵； 采用产自神奇大自然的天然彩沙，经手工精致而成。
-						</p>
-					</div>
-					<div class="mask-m unactive"></div>
-				</li>
-				<li onclick="skipSd('drum')">
-					<div class="popup-m">
-						<div class="icon-m">
-							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/gu.png">
-							<p class="title-m">非洲鼓</p>
-						</div>
-						<div class="btn"><a href="/?page_id=338&course=drum">查看更多</a></div>
-						<p class="summary-m">非洲鼓用手拍击发声，当拍击的部位不同时，音色也有分别，可以出高、中及低三种声音。 这种鼓可以用作独奏，亦可以和其它传统乐器作合奏。
-						</p>
-					</div>
-					<div class="mask-m unactive"></div>
-				</li>
+			<?php endif;endforeach;?>
 			</ul>
 		</div>
 

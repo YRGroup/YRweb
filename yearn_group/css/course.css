@@ -11,6 +11,21 @@
     min-width: 100%;
     min-height: 100%;
 }
+.c-box .videoCover{
+  display: none;
+}
+@media (max-width:860px){
+  .c-box .videoCover{
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  #myvideo{
+    display: none;
+  }
+
+}
 .wrap {
     width: 100vw;
     height: 100vh;
